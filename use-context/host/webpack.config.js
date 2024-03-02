@@ -44,9 +44,12 @@ module.exports = (_, argv) => ({
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
+        host: "host@http://localhost:3000/remoteEntry.js",
         nav: "nav@http://localhost:3001/remoteEntry.js",
       },
-      exposes: {},
+      exposes: {
+        "./store": "./src/store",
+      },
       shared: {
         ...deps,
         react: {
@@ -62,6 +65,6 @@ module.exports = (_, argv) => ({
     new HtmlWebPackPlugin({
       template: "./src/index.html",
     }),
-    new Dotenv()
+new Dotenv()
   ],
 });
