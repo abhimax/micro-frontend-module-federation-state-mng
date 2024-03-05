@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 import Header from "nav/Header";
-
+import { CountProvider, useCount } from "host/store";
 import "./index.scss";
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useCount();
   return (
     <div className="text-3xl mx-auto max-w-6xl">
-      <Header count={count} onClear={() => setCount(0)} />
+      <Header />
       <div>Name: host</div>
       <div>Count: {count}</div>
       <div>
@@ -23,4 +23,9 @@ const App = () => {
     </div>
   );
 };
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(
+  <CountProvider>
+    <App />
+  </CountProvider>,
+  document.getElementById("app")
+);
