@@ -9,7 +9,7 @@ const App = () => {
   const [count, setCount] = useCount();
   return (
     <div className="text-3xl mx-auto max-w-6xl">
-      <Header />
+      <Header onClear={()=>setCount(0)}/>
       <div>Name: host</div>
       <div>Count: {count}</div>
       <div>
