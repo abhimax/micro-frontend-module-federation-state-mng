@@ -1,0 +1,28 @@
+.header-wrapper {
+  background-color: rgb(73, 33, 183);
+  display: flex;
+  color: white;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  .header-title {
+    font-size: 1.6rem;
+  }
+  .count-indicator {
+    background-color: rgb(255, 255, 255);
+    color: rgb(24, 15, 50);
+    border-radius: 5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .header-btn {
+    background-color: rgb(24, 15, 50);
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+  }
+}
