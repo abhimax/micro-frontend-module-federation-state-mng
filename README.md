@@ -32,3 +32,9 @@ npm install
 npm run start
 ```
 This command will launch the application. Depending on the example you wish to run, navigate to the respective folder (simple, use-context, redux) to see the implementation in action.
+### Building the App
+```bash
+npm run build
+```
+## Contributing
+Contributions are welcome! If you have any suggestions or improvements, feel free to fork the repository and submit a pull request.
