@@ -16,3 +16,19 @@ This repository showcases a sample project demonstrating three distinct approach
 
 All micro frontend projects were scaffolded using `create-mf-app` and employ CSS Modules for styling.
 
+## Getting Started
+
+To get the app running or to build it, you'll need to have npm installed on your machine. Follow the steps below for both running and building the app. Do do that you need to check locate ech of micro fronted apps like host, nav etc..
+
+### Installation
+
+First, clone the repository and navigate to the project's root directory. Then, install the dependencies:
+
+```bash
+npm install
+```
+### Running the App
+```bash
+npm run start
+```
+This command will launch the application. Depending on the example you wish to run, navigate to the respective folder (simple, use-context, redux) to see the implementation in action.
